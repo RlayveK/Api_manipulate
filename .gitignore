@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente virtual
+.env
+.venv/
+env/
+venv/
+
+# Arquivos de configuração de ambiente
+*.env
+
+# Arquivos de log e temporários
+*.log
+*.tmp
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints
+
+# macOS / Linux
+.DS_Store
+
+# Windows
+Thumbs.db
