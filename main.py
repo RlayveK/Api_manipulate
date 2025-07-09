@@ -4,7 +4,7 @@ from api_plano_de_contas import getPlano
 from api_cobrancas import getCobs
 from api_get_Grupo import getGrupo
 from escrever_csv import criar_csv
-from api_get_Clientes import getClientes
+from api_get_Clientes import getTodosClientes
 from api_cobrancas_inicioMes import getCobsInicio
 import time 
 
@@ -33,7 +33,7 @@ print("CredPosPagos.json criado com sucesso!")
 print("esperando para próximas requisições: ")
 time.sleep(30)
 
-criar_csv('Clientes.csv', getClientes())
+criar_csv('Clientes.csv', getTodosClientes())
 print("Clientes.csv atualizado com sucesso")
 print("esperando para próximas requisições: ")
 time.sleep(30)
