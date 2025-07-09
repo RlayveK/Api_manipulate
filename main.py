@@ -9,26 +9,32 @@ from api_cobrancas_inicioMes import getCobsInicio
 import time 
 
 criar_json(getPlano(), "plano_contas.json")
+print("Plano de Contas criado com sucesso!")
 print("esperando para próximas requisições: ")
 time.sleep(30)
 
 criar_json(getGrupo("104"), "WhiteLabels.json") 
+print("WhiteLabels.json criado com sucesso!")
 print("esperando para próximas requisições: ")
 time.sleep(30)
 
 criar_json(getGrupo("134"), "CredAtivosPrePagos.json")
+print("CredAtivosPrePagos.json criado com sucesso!")
 print("esperando para próximas requisições: ")
 time.sleep(30)
 
 criar_json(getGrupo("137"), "CredAtivosPosPagos.json")
+print("CredAtivosPosPagos.json criado com sucesso!")
 print("esperando para próximas requisições: ")
 time.sleep(30)
 
 criar_json(getGrupo("76"), "CredPosPagos.json")
+print("CredPosPagos.json criado com sucesso!")
 print("esperando para próximas requisições: ")
 time.sleep(30)
 
 criar_csv('Clientes.csv', getClientes())
+print("Clientes.csv atualizado com sucesso")
 print("esperando para próximas requisições: ")
 time.sleep(30)
 
@@ -36,6 +42,8 @@ criar_json(getCobs(), "cobrancas.json")
 if deve_executar():
     dados = getCobsInicio()
     append_to_json(dados, "cobsInicioMes.json", chave_unica="id_recebimento_recb")
+    print("CobsInicioMes atualizado com sucesso!")
+print("cobrancas atualizado com sucesso!")
 print("esperando para próximas requisições: ")
 time.sleep(30)
 

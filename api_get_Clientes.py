@@ -9,7 +9,7 @@ load_dotenv()
 app_token = os.getenv("app_token")
 access_token = os.getenv("access_token")
 
-URL_p1 = 'https://api.superlogica.net/v2/financeiro/clientes?itensPorPagina=50&status=2&pagina='
+URL_p1 = 'https://api.superlogica.net/v2/financeiro/clientes?itensPorPagina=200&status=2&pagina='
 
 HEADERS = {
     'Content-type': 'application/x-www-form-urlencoded',
